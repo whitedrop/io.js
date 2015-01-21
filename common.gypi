@@ -48,7 +48,7 @@
   },
 
   'target_defaults': {
-    'default_configuration': 'Release',
+    'default_configuration': 'Debug',
     'configurations': {
       'Debug': {
         'variables': {
@@ -63,7 +63,7 @@
         ],
         'msvs_settings': {
           'VCCLCompilerTool': {
-            'RuntimeLibrary': 1, # static debug
+            'RuntimeLibrary': 3, # static debug
             'Optimization': 0, # /Od, no optimization
             'MinimalRebuild': 'false',
             'OmitFramePointers': 'false',
