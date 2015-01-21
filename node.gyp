@@ -74,7 +74,7 @@
   'targets': [
     {
       'target_name': 'iojs',
-      'type': 'share_library',
+      'type': 'shared_library',
 
       'dependencies': [
         'node_js2c#host',
