@@ -22,6 +22,7 @@
 #ifndef SRC_NODE_V8_PLATFORM_H_
 #define SRC_NODE_V8_PLATFORM_H_
 
+#include "node.h"
 #include "uv.h"
 #include "v8-platform.h"
 
@@ -47,7 +48,7 @@ class TaskQueue {
   v8::Task* ring_[1024];
 };
 
-class Platform : public v8::Platform {
+class NODE_EXTERN Platform : public v8::Platform {
  public:
   explicit Platform(unsigned int worker_count);
   virtual ~Platform() override;
